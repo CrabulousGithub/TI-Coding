@@ -1,0 +1,22 @@
+ClrHome
+Input "SET DICE TO D",D
+Lbl MN
+Menu("DICE ROLLER V2","SET FACE COUNT",SD,"ROLL",R,"EXIT",ND)
+
+Lbl SD
+ClrHome
+Input "SET DICE TO D",D
+Goto MN
+
+Lbl R
+ClrHome
+randInt(1,D)→V
+Disp "YOU ROLLED..."
+Pause 
+Disp V
+Pause 
+Goto MN
+
+Lbl ND
+ClrHome
+Stop

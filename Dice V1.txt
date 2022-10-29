@@ -1,0 +1,19 @@
+Lbl S
+ClrHome
+Disp "DICE ROLLER"
+Disp "D2,D4,D8, OR D12?"
+Input "D",D
+randInt(1,D)→R
+Disp "YOU ROLLED..."
+Pause 
+Disp R
+
+Disp "ROLL AGAIN?"
+Input "1 FOR YES, 2 FOR NO:",O
+If O=1
+Then
+Goto S
+Else
+ClrHome
+Disp "MADE BY CRABULOUS"
+End
